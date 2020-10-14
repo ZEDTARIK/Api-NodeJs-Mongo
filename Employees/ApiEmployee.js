@@ -13,8 +13,7 @@ router.listen(port, () => console.log(' using this Port  =>  localhost:3000'));
 mongoose.connect('mongodb://localhost/Employee_db', {
     useNewUrlParser: true,
     useUnifiedTopology: true
-})
-    .then(() => console.log('Connect to DataBase With SuccessFully'))
+}).then(() => console.log('Connect to DataBase With SuccessFully'))
     .catch((error) => console.error('Faild To Connect' + error))
 
 // Schema oor Model Employee 
